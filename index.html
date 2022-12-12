@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <button id="dark"> <i class="fa-solid fa-moon"></i> Dark Mode</button>
+    </header>
+    <section class="filter_search">
+        <div class="search">
+            <p><i class="fa-solid fa-magnifying-glass"></i></p>
+
+            <input placeholder="Search for a country..." type="text" id="search"/>
+
+            
+        </div>
+       
+            <div class="filter">
+                <div class="drop">
+                    <p>Filter by Region</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    
+                </div>
+                <div class="dropdown">
+                     <p id="region">Africa</p>
+                     <p id="region">America</p>
+                     <p id="region">Asia</p>
+                     <p id="region">Europe</p>
+                     <p id="region">Ocenia</p>
+
+                </div>
+               
+            </div>
+       
+    </section>
+    <section class="country_divs">
+        <div class="country_bigdiv">
+
+
+        </div>
+    </section>
+   
+    
+    <script src="./app.js"></script>
+</body>
+</html>

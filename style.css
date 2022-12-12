@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    padding: 30px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header button{
+    padding: 10px 20px;
+    cursor: pointer;
+    /* background-color: transparent; */
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid white;
+    
+
+
+}
+.filter_search{
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 190px;
+}
+.search{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid white;
+
+}
+.search input{
+    width: 93%;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 10px 0px;
+}
+.filter{
+    width:280px;
+    height: 50px;
+    border: 1px solid white;
+}
+.drop{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.dropdown{
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    border: 1px solid white;
+
+
+}
+.dropdown p:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.add{
+    display: block;
+}
+/* .filter select{
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+
+} */
+
+.country_divs{
+    width: 100%;
+    padding: 60px 35px;
+    display: flex;
+    justify-content: center;
+
+}
+.country_bigdiv{
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.country_div{
+    width: 23%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+.country_image{
+    width: 100%;
+    height: 200px;
+
+}
+.country_image img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+.country_text{
+    padding: 20px;
+    background-color: white;
+    color: black;
+
+}
+.country_text h1{
+    padding: 20px 0px;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
