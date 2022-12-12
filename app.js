@@ -36,7 +36,7 @@ function fillData(index){
     let country_image=document.createElement('div')
     country_image.classList.add('country_image')
     let a_div=document.createElement('a')
-    a_div.setAttribute("href",`details.html`)
+    a_div.setAttribute("href",'details.html')
     a_div.setAttribute("target","blank")
     let img_div=document.createElement('img')
     img_div.src=element.flags.svg
@@ -65,8 +65,11 @@ function fillData(index){
   country_bigdiv.append(country_div)
 
   a_div.addEventListener('click',()=>{
+    // console.log('aldim')
+    window.location = "./details.html";
     let detail_storage=element.name.common
     localStorage.setItem("detail_storage",detail_storage)
+    // console.log( detail_storage)
      
   })
         
@@ -76,13 +79,13 @@ function fillData(index){
 
 
 
-// function createError() {
-//   country_bigdiv.innerHTML = " ";
-//   let createErrorElement = document.createElement("h1");
-//   createErrorElement.setAttribute("class", "error");
-//   createErrorElement.innerText = "Error";
-//   country_bigdiv.append(createErrorElement);
-// }
+function createError() {
+  country_bigdiv.innerHTML = " ";
+  let createErrorElement = document.createElement("h1");
+  createErrorElement.setAttribute("class", "error");
+  createErrorElement.innerText = "Error";
+  country_bigdiv.append(createErrorElement);
+}
 
 search.addEventListener("input", function searching(e) {
   country_bigdiv.innerHTML = " ";
